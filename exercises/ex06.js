@@ -15,3 +15,20 @@ Use the eatsPlants and eatsAnimals variables to test your code.
 
 If eatsPlants equals true and eatsAnimals equals false, then herbivore should be printed to the console. 
 */
+
+let eatsPlants = true;
+let eatsAnimals = true;
+
+// if (eatsPlants && !eatsAnimals) {
+//   animal = "herbivore";
+// } else if (!eatsPlants && eatsAnimals) {
+//   animal = "carnivore";
+// } else if (eatsPlants && eatsAnimals) {
+//   animal = "omnivore";
+// } else {
+//   animal = "";
+// }
+
+const animal = eatsPlants && !eatsAnimals ? "herbivore" : !eatsPlants && eatsAnimals ? "carnivore" : eatsPlants && eatsAnimals ? "omnivore" : "";
+
+console.log(animal);
