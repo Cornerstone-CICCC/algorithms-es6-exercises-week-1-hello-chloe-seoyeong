@@ -35,58 +35,26 @@ XL	    24"	    31"	    8.88"
 3XL	    28"	    34"	    10.13"
 */
 
-let shirtWidth = 30;
+let shirtWidth = 27;
 let shirtLength = 33;
 let shirtSleeve = 9.63;
 
-let shirtWidthSize = null;
-let shirtLengthSize = null;
-let shirtSleeveSize = null;
+let shirtSize = null;
 
-if (shirtWidth >= 18 && shirtWidth < 20) {
-  shirtWidthSize = "S"
-} else if (shirtWidth >= 20 && shirtWidth < 22) {
-  shirtWidthSize = "M"
-} else if (shirtWidth >= 22 && shirtWidth < 24) {
-  shirtWidthSize = "L"
-} else if (shirtWidth >= 24 && shirtWidth < 26) {
-  shirtWidthSize = "XL"
-} else if (shirtWidth >= 26 && shirtWidth < 28) {
-  shirtWidthSize = "2XL"
-} else if (shirtWidth >= 28) {
-  shirtWidthSize = "3XL"
-}
-
-if (shirtLength >= 28 && shirtLength < 29) {
-  shirtLengthSize = "S"
-} else if (shirtLength >= 29 && shirtLength < 30) {
-  shirtLengthSize = "M"
-} else if (shirtLength >= 30 && shirtLength < 31) {
-  shirtLengthSize = "L"
-} else if (shirtLength >= 31 && shirtLength < 33) {
-  shirtLengthSize = "XL"
-} else if (shirtLength >= 33 && shirtLength < 34) {
-  shirtLengthSize = "2XL"
-} else if (shirtLength >= 34) {
-  shirtLengthSize = "3XL"
-}
-
-if (shirtSleeve >= 8.13 && shirtSleeve < 8.38) {
-  shirtSleeveSize = "S"
-} else if (shirtSleeve >= 8.38 && shirtSleeve < 8.63) {
-  shirtSleeveSize = "M"
-} else if (shirtSleeve >= 8.63 && shirtSleeve < 8.88) {
-  shirtSleeveSize = "L"
-} else if (shirtSleeve >= 8.88 && shirtSleeve < 9.63) {
-  shirtSleeveSize = "XL"
-} else if (shirtSleeve >= 9.63 && shirtSleeve < 10.13) {
-  shirtSleeveSize = "2XL"
-} else if (shirtSleeve >= 10.13) {
-  shirtSleeveSize = "3XL"
-}
-
-if (shirtWidthSize === shirtLengthSize && shirtLengthSize === shirtSleeveSize) {
-  console.log(`This T-shirt size is ${shirtLengthSize}`);
+if ((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+  shirtSize = "S";
+} else if ((shirtWidth >= 20 && shirtWidth < 22) && (shirtLength >= 29 && shirtLength < 30) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+  shirtSize = "M";
+} else if ((shirtWidth >= 22 && shirtWidth < 24) && (shirtLength >= 30 && shirtLength < 31) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
+  shirtSize = "L";
+} else if ((shirtWidth >= 24 && shirtWidth < 26) && (shirtLength >= 31 && shirtLength < 33) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+  shirtSize = "XL";
+} else if ((shirtWidth >= 26 && shirtWidth < 28) && (shirtLength >= 33 && shirtLength < 34) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+  shirtSize = "2XL";
+} else if ((shirtWidth >= 28) && (shirtLength >= 34) && (shirtSleeve >= 10.13)) {
+  shirtSize = "3XL";
 } else {
-  console.log(`N/A`)
+  shirtSize = "N/A";
 }
+
+console.log(`This T-shirt size is ${shirtSize}`);
