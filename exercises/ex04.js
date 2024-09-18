@@ -16,6 +16,6 @@ let flavor = "chocolate";
 let vessel = "bowl";
 let toppings = "sprinkles";
 
-if (flavor && vessel && toppings) {
+if ((flavor === "vanilla" || "chocolate") && (vessel === "cone" || "bowl") && (toppings === "sprinkles" || "peanuts")) {
   console.log(`I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}`);
 }
