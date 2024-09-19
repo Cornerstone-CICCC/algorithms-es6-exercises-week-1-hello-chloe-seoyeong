@@ -5,7 +5,7 @@ laugh(3);
 Returns: hahaha!
 */
 
-function laugh (times) {
+const laugh = function (times) {
   let ha = "";
   for (i = 0; i < times; i++) {
     ha += "ha";
