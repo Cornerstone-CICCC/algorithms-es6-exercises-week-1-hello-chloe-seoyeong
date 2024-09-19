@@ -31,3 +31,31 @@ T-2 seconds
 T-1 seconds
 Solid rocket booster ignition and liftoff!
 */
+
+let nasaCount = 60;
+while (nasaCount >= 0) {
+  switch (nasaCount) {
+    case 50:
+      message = "Orbiter transfers from ground to internal power"
+      break;
+    case 31:
+      message = "Ground launch sequencer is go for auto sequence start"
+      break;
+    case 16:
+      message = "Activate launch pad sound suppression system"
+      break;
+    case 10:
+      message = "Activate main engine hydrogen burnoff system"
+      break;
+    case 6:
+      message = "Main engine start"
+      break;
+    case 0:
+      message = "Solid rocket booster ignition and liftoff!"
+      break;
+    default:
+      message = `T-${nasaCount} seconds`
+  }
+  console.log(message);
+  nasaCount--;
+}
