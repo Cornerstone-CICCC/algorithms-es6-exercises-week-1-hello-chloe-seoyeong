@@ -35,3 +35,14 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+function buildTriangle(widest) {
+  let triangle = "";
+  for (let i = 1; i <= widest; i++) {
+    triangle += makeLine(i);
+  }
+  return triangle;
+}
+
+const asterisksTrianlge = buildTriangle(5);
+console.log(asterisksTrianlge);
