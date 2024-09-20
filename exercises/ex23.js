@@ -26,3 +26,10 @@ console.log(" "); // it just for separating
 for (let i = ingredients.length-1; i >= 0; i--) {
   console.log(`${ingredients[i]}`);
 }
+
+console.log(" "); // it just for separating
+
+const reverseIngredients = ingredients.reverse();
+for (let i = 0; i < reverseIngredients.length; i++) {
+  console.log(`${reverseIngredients[i]}`);
+}
