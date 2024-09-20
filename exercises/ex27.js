@@ -37,9 +37,9 @@ const savingsAccount = {
       savingsAccount.balance -= amount;
     }
   },
-  summary: function printAccountSummary() {
+  printAccountSummary: function() {
     return `Welcome!\nYour balance is currently $${this.balance} and your interest rate is ${this.interestRatePercent}%.`
   }
 };
 
-console.log(savingsAccount.summary());
+console.log(savingsAccount.printAccountSummary());
