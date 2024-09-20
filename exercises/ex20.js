@@ -10,13 +10,15 @@ var mechanic = "Kaylee";
 Then, print the crew array to the console.
 */
 
-const crew = [
-  "Mal",
-  "Zoe",
-  "Wash",
-  "Inara",
-  "Jayne",
-  "Kaylee",
-]
+var captain = "Mal";
+var second = "Zoe";
+var pilot = "Wash";
+var companion = "Inara";
+var mercenary = "Jayne";
+var mechanic = "Kaylee";
+
+const crew = [];
+
+crew.splice(0, 0, captain, second, pilot, companion, mercenary, mechanic);
 
 console.log(crew);
